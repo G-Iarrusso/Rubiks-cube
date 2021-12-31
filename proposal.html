@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="List of team members" />
+  <meta name="dcterms.date" content="2021-11-11" />
+  <title>CP411 Project: Your Project Title (project proposal template)</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="proposal.css?_&amp;d2lSessionVal=MSTiCGJCVvAfo7YMH3BPqWHEu&amp;ou=397548" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+<script>function lti_launch( vars, target ) {
+						var query = '';
+						var new_tab = false;
+
+						for(var key in vars) {
+							if(query.length == 0) {
+								query += '?' + key + '=' + encodeURIComponent(vars[key]);
+							}
+							else {
+								query += '&' + key + '=' + encodeURIComponent(vars[key]);
+							}
+						}
+
+						var url = '/d2l/customization/pearsonlti/6605/Launch' + query;(target == '_blank') ? window.open( url, '_blank' ) : location.replace( url );}</script><script src="/d2l/common/math/MathML.js?v=20.21.10.32920"></script><script>document.addEventListener('DOMContentLoaded', function() { D2LMathML.DesktopInit('https://s.brightspace.com/lib/mathjax/2.7.4/MathJax.js?config=MML_HTMLorMML','https://s.brightspace.com/lib/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML%2cSafe','130',false); });</script><script>window.addEventListener('message', function(event) { 
+					if( !event.data ) {
+						return;
+					}
+
+					var params;
+					try {
+						params = JSON.parse( event.data );
+					}
+					catch {
+						return;
+					}
+					if( !params.subject || params.subject !== 'lti.frameResize' ) {
+						return;
+					}
+
+					const MAX_FRAME_HEIGHT = 10000
+					if( !params.height || params.height < 1 || params.height > MAX_FRAME_HEIGHT ) {
+						console.warn( 'Invalid height value received, aborting' );
+						return;
+					}
+					var el = document.getElementsByTagName( 'iframe' );
+					for ( var i=0; i < el.length; i++ ) {
+						if( el[i].contentWindow === event.source ) {
+							el[i].style.height = params.height + 'px';
+							el[i].style.width = '100%';
+							console.info( 'Setting iFrame height to ' + params.height );
+							console.info( 'Setting iFrame width to 100%' );
+						}
+					}
+				});</script></head>
+<body>
+<header id="title-block-header">
+<h1 class="title">CP411 Project: Ruibks Cube Plus<br>(project proposal template)</h1>
+<p class="author">John Barber-Ormerod, Gianluca Iarrusso</p>
+<p class="date">2021-11-26</p>
+</header>
+<h2 id="introduction">Introduction</h2>
+<p>General description and rationals of your project.</p>
+<p>We want to make a rubiks cube program that allows the user to both shuffle and solve the cube.
+We also want to make it a bit more engaging by having the option of textures for the faces instead of just simple colours.</p>
+<h2 id="problem-solving-and-algorithms">Problem solving and algorithms</h2>
+<p>One of the major things we are going to have to solve is how to rotate each of the cubes of the face together, rotating the camera around the cube and 
+shuffling the cube in a way that makes it challenging for the player. </p>
+<h2 id="design-consideration">Design consideration</h2>
+<p>Our User will be able to manipulate the view directly, this would impact the data structures to reflect the users input, it would outut the new cube<br />
+The cube itself will be constructed of 27 intpendent cubes, they will be manipulated in clusters of 9<br />
+There will be 5 main Menus: Camera, Rotate, Shuffle, Texture, Quit<br/>
+The Camera Sub Menu will allow the player to select to focus on 1 of 6 faces<br/>
+The Rotate Sub menu will allow the player to rotate a 9 square unit: Top, Bottom, Left, Right, Front, Back<br/>
+The Texture Option has a sub menu that contains different options for the cube to look<br/>
+The Game will end with the user hearing a sound denoting they won, they can reshuffle to play again</p>
+<h2 id="milestones-schedule">Milestones &amp; schedule</h2>
+<p>List of tasks/milestones/check points of your project with time schedule. For group project, it needs to provide the roles and tasks of each member.</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Task ID</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: center;">Due date</th>
+<th style="text-align: center;">Lead</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: left;">Get a rubiks cube on the screen</td>
+<td style="text-align: center;">11/30/2021</td>
+<td style="text-align: center;">Gianluca</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: left;">Get the sides to rotate</td>
+<td style="text-align: center;">12/02/2021</td>
+<td style="text-align: center;">John</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: left;">Caemra will rotate to each side</td>
+<td style="text-align: center;">12/02/2021</td>
+<td style="text-align: center;">Gianluca</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Menu values</td>
+<td style="text-align: center;">11/30/2021</td>
+<td style="text-align: center;">Gianluca</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: left;">Sound will play on win</td>
+<td style="text-align: center;">12/04/2021</td>
+<td style="text-align: center;">John</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: left;">Textures for sides</td>
+<td style="text-align: center;">12/06/2021</td>
+<td style="text-align: center;">John</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7</td>
+<td style="text-align: left;">QA</td>
+<td style="text-align: center;">12/07/2021</td>
+<td style="text-align: center;">Gianluca</td>
+</tr>
+</tbody>
+</table>
+<h2 id="references">References</h2>
+<p>A list of references you read for your project, such as papers, articles, data sources.</p>
+<p><strong>Comments</strong></p>
+<ol class="incremental" type="1">
+<li>Check the project <a href="readme.txt?_&amp;d2lSessionVal=MSTiCGJCVvAfo7YMH3BPqWHEu&amp;ou=397548">readme.txt</a> for detailed requirements and evaluation. You need to describe and claim new features in your project, so it is good (not required) to mention some new features in the proposal.</li>
+<li>You may use HTML elements and CSS for better presentation of your proposal. For example, this HTML document is generated by using <a href="proposal_template.md?_&amp;d2lSessionVal=MSTiCGJCVvAfo7YMH3BPqWHEu&amp;ou=397548">proposal_template.md</a> and <a href="proposal.css?_&amp;d2lSessionVal=MSTiCGJCVvAfo7YMH3BPqWHEu&amp;ou=397548">proposal.css</a> and the following pandoc command</li>
+</ol>
+<pre><code>pandoc  -s  -i proposal_template.md -o proposal_template.html --css=proposal.css</code></pre>
+<ol class="incremental" start="3" type="1">
+<li>You can submit your proposal in PDF file format for proposal submission.</li>
+</ol>
+</body>
+</html>

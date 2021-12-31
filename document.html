@@ -1,0 +1,62 @@
+<h1>Set Up</h1>
+<p>This is how to set up the Rubik's Cube project into Eclipse</p>
+<p>Import cp411_project_Iarr520_Barb8230.zip into Eclipse, use the "Existing Project into Workspace" option and selecting the projects Zip.</p>
+<p>From there you can build the project by right clicking the project and selecting "Build Project" the project should build without issue.</p>
+<p>Once the project is built you are ready to run the project. To do this right click the proejct again and hover the "Run As" option</p>
+<p>select the "C++ application" option from the sub menu and the project should run</p>
+
+<h1>The Game</h1>
+<p>The point of the game is to solve the rubik's cube, the one at the start is how it will looked solved,</p>
+<p>you will know its been solved as an audio clip of trumpets will play.</p>
+<P>This game is primarily played through the menu and keybaord inputs.</P>
+
+<h1>The Menu</h1>
+<p>By Right clicking on the game space the menu will appear. From there your options are:</p>
+<ol class="incremental" type="1">
+    <li>Reset - reset the cube back to the beginning</li>
+    <li>Scramble - Shuffle the faces to try and solve</li>
+    <li>Shading - Different Textures for the cube</li>
+    <li>Camera - Rotate the Camera in the X, Y or Z axis</li>
+    <li>Rotate - Rotate the Desired face, the user can select: Top, Bottom, Right, Left, Front, Back</li>
+    <li>Quit - Exit the Game</li> </ol>
+<p>We will now take a deeper look into each menu</p>
+
+<h2>Reset</h2>
+<p>This will reset the game, the player will not hear the winning audio because they gave up and reset</p>
+
+<h2>Scramble</h2>
+<p>This scrambles the cube and is the easiest way to try and solve the cube</p>
+
+<h2>Shading</h2>
+<p>There are three shading options for the rubik's cube</p>
+<p>Constant - Which is the default, the tile is one solid color</p>
+<p>Wire - There are wire X's on each tile and a border all in the color of the tile, vector graphics inspired</p>
+<p>Monkey - The Monkey fRom CP411 assignments makes a return one for each tile with the tile color providing the differentiation of where each monkey belongs</p>
+
+<h2>Camera</h2>
+<p>The camera works by selectign one of the Three sub menu options</p>
+<p>X - Rotate along the X</p>
+<p>Y - Rotate along the Y</p>
+<p>Z - Rotate along the Z</p>
+<p>The rotation works based on HBF implementation, if the mouse is to the left of where you clicked you rotate counter clockwise, the right is clockwise</p>
+
+<h2>Rotate</h2>
+<p>The Rotate is how we move the faces and solve the unsolved cubes</p>
+<p>The six faces are:</p>
+<ol class="incremental" type="1">
+    <li>Top - White - Z Key</li>
+    <li>Bottom - Yellow - X Key</li>
+    <li>Left - Red - C Key</li>
+    <li>Right - Orange - V Key</li>
+    <li>Front - Blue - B Key</li>
+    <li>Back - Green - N Key</li>
+</ol>
+<p>Using a series of these 6 primary motions you can solve any Rubik's Cube</p>
+
+<h2>Quit</h2>
+<p>This is how you leave the game, you have free will, you can use it</p>
+
+<h1>Keyboard inputs and face rotates</h1>
+<p>As mentioned in the "Rotate" Section, there are keys assosiated to the faces,</p>
+<p>by clicking the coresponding key that face will rotate.</p>
+<p>Another way to Rotate is by using the R key, this will rotate the last selected face.</p>
